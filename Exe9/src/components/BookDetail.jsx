@@ -17,7 +17,7 @@ const BookDetail = ({ books }) => {
         <strong>Description:</strong> {book.description}
       </p>
       <p>
-        <strong>Rating:</strong> ⭐ {book.rating}
+        <strong>Rating:</strong>  {book.rating}
       </p>
       <Link to="/">
         <button>Back to List</button>

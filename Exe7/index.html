@@ -1,46 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Weather App</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Bookstore</title>
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
-<body style="font-family: Arial; text-align: center; margin-top: 100px;">
+<body>
+  <div id="container">
+    <h1>Online Bookstore</h1>
 
-<h2>Weather App</h2>
-<input type="text" id="city" placeholder="Enter city name">
-<button onclick="getWeather()">Get Weather</button>
+    <h2>Books Available</h2>
+    <div id="book-list"></div>
 
-<h3 id="cityName"></h3>
-<p id="temp"></p>
-<p id="desc"></p>
-
-<script>
-async function getWeather() {
-  const city = document.getElementById("city").value;
-  const apiKey = "fdebb3fc19cb964906b80ba75322eb71"; // your API key
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-
-  try {
-    const res = await fetch(url);
-    const data = await res.json();
-
-    if (res.ok) {
-      document.getElementById("cityName").textContent = data.name;
-      document.getElementById("temp").textContent = `Temperature: ${data.main.temp}°C`;
-      document.getElementById("desc").textContent = `Condition: ${data.weather[0].description}`;
-    } else {
-      document.getElementById("cityName").textContent = "City not found!";
-      document.getElementById("temp").textContent = "";
-      document.getElementById("desc").textContent = "";
-    }
-  } catch (error) {
-    document.getElementById("cityName").textContent = "Error fetching weather data!";
-    document.getElementById("temp").textContent = "";
-    document.getElementById("desc").textContent = "";
-  }
-}
-</script>
-
+    <h2>Shopping Cart</h2>
+    <div id="cart"></div>
+    <p id="total">Total: $0.00</p>
+  </div>
+  <script type="module" src="./js/main.js"></script>
 </body>
 </html>
