@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #4B2E83;
+            padding: 1rem;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+        }
+
+        .slideshow {
+            margin-top: 60px;
+            position: relative;
+            height: 600px;
+            overflow: hidden;
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .slide.active {
+            opacity: 1;
+        }
+
+        @keyframes slide {
+            0% { opacity: 0; }
+            20% { opacity: 1; }
+            80% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+
+        .slideshow .slide:nth-child(1) { animation: slide 12s infinite; }
+        .slideshow .slide:nth-child(2) { animation: slide 12s infinite 4s; }
+        .slideshow .slide:nth-child(3) { animation: slide 12s infinite 8s; }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #E6E6FA;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav a {
+                font-size: 16px;
+                display: block;
+                padding: 0.5rem 0;
+            }
+            .slideshow {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="slideshow">
+        <div class="slide active"><img src="/Exe4/images/Screenshot 2025-10-15 185023.png" alt="Cake 1"></div>
+        <div class="slide"><img src="/Exe4/images/Screenshot 2025-10-15 185050.png" alt="Cake 2"></div>
+        <div class="slide"><img src="/Exe4/images/Screenshot 2025-10-15 185148.png" alt="Cake 3"></div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Bakery</p>
+    </footer>
+</body>
+</html>

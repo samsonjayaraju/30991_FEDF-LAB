@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "title": "Finish React assignment",
+    "completed": false
+  },
+  {
+    "id": 2,
+    "title": "Read about Tailwind CSS",
+    "completed": true
+  }
+]
