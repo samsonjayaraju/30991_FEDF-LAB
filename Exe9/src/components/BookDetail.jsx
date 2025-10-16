@@ -8,7 +8,7 @@ const BookDetail = ({ books }) => {
   if (!book) return <p>Book not found.</p>;
 
   return (
-    <div style={{ marginTop: "30px" }}>
+    <div style={{ marginTop: "30px", textAlign: "center" }}>
       <h2>{book.title}</h2>
       <p>
         <strong>Author:</strong> {book.author}
@@ -17,10 +17,21 @@ const BookDetail = ({ books }) => {
         <strong>Description:</strong> {book.description}
       </p>
       <p>
-        <strong>Rating:</strong>  {book.rating}
+        <strong>Rating:</strong> {book.rating}
       </p>
       <Link to="/">
-        <button>Back to List</button>
+        <button
+          style={{
+            backgroundColor: "#28a745",
+            color: "white",
+            border: "none",
+            borderRadius: "4px",
+            padding: "6px 10px",
+            cursor: "pointer",
+          }}
+        >
+          Back to List
+        </button>
       </Link>
     </div>
   );

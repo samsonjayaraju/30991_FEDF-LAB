@@ -9,10 +9,8 @@ const emailError = document.getElementById('emailError');
 const passwordError = document.getElementById('passwordError');
 const phoneError = document.getElementById('phoneError');
 
-// Email validation regex
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-// Real-time validation
 [fullName, email, password, phone].forEach(input => {
     input.addEventListener('input', function() {
         validateInput(this);
