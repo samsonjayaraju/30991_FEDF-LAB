@@ -3,6 +3,7 @@ EXP 1:
 
 EXP 2:
 <img width="1918" height="1018" alt="image" src="https://github.com/user-attachments/assets/a7464a3c-d194-446b-bada-a7004a22c501" />
+
 EXP 3:
 <img width="1919" height="973" alt="image" src="https://github.com/user-attachments/assets/27029008-eb2c-4ee3-ad19-8ae5ab35b52b" />
 
@@ -22,3 +23,5 @@ EXP 8:
 <img width="1919" height="1017" alt="image" src="https://github.com/user-attachments/assets/ccacfc5d-eba7-4c36-b2bc-10dd374c62a5" />
 
 EXP 9:
+<img width="1918" height="966" alt="image" src="https://github.com/user-attachments/assets/70115888-1b22-4cdf-ade1-8b477e64fa46" />
+<img width="1919" height="962" alt="image" src="https://github.com/user-attachments/assets/8f2cec1b-71be-4dda-819d-212f297057b7" />
